@@ -14,18 +14,19 @@ body{
 .navbar-nav a{
     color: black !important;
     position: relative;
+    text-decoration: none;
 }
 .navbar-nav a:hover{
     color: #fca61f;
 }
 .navbar-nav a:after {    
-    background: none repeat scroll 0 0 transparent;
+    background: transparent; /*none repeat scroll 0 0 transparent;*/
     bottom: 0;
     content: "";
     display: block;
     height: 2px;
     left: 50%;
-    top: 35px;
+    /*top: 35px;*/
     position: absolute;
     background: #fca61f;
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
@@ -42,6 +43,12 @@ body{
     color: #fff;
     font-size: 1.2rem;
 }
+.c-btn:hover {
+    background: #6f34fe; /* Changed hover color */
+    color: #fff;
+    transform: translateY(-5px);
+    transition-duration: 0.5s;
+}
 /* styling home section starts */
 .home{
     background: linear-gradient(33deg, rgba(242,242,255,1) 0%, rgba(235,249,255,1) 100%);
@@ -50,9 +57,10 @@ body{
 .home h2{
     font-size: 3rem;
     line-height: 4rem;
+    color: #3f396d;
 }
 .c-orange{
-    color: #6f34fe;
+    color: #6f34fe; /* Purple text applied here*/
     font-weight: 700;
     font-size: 4rem;
 }
@@ -60,12 +68,14 @@ body{
     width: fit-content;
     margin-top: 1rem;
     font-size: 1.2rem;
+    color: #3f396d;
 }
 .h-btn:hover{
     background: #6f34fe;
     color: #fff;
     transform: translateY(-20px);
     transition-duration: 1s;
+/* Styling link hover effects*/    
 }
 .link{
     text-decoration: none;
@@ -87,11 +97,16 @@ body{
     transition: transform 0.25s ease-out;
 }
 .link:hover{
-    color: #6f34fe;
+    color: #6f34fe; /* Purple on hover*/
 }
 .link:hover::after{
     transform: scaleX(1);
     transform-origin: bottom left;
+}
+/* Button focus styles */
+.c-btn:focus {
+    outline: none;
+    box-shadow: 0 0 5px #6f34fe;
 }
 /* adding animation to home section image  */
 .home img{
