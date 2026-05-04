@@ -1,72 +1,66 @@
-// Reusable function for circular progress bars
 function createCircularProgress(elementSelector, valueSelector, endValue, color, speed) {
-  let progressElement = document.querySelector(elementSelector);
-  let valueElement = document.querySelector(valueSelector);
+  const progressElement = document.querySelector(elementSelector);
+  const valueElement = document.querySelector(valueSelector);
+
+  if (!progressElement || !valueElement) return;
 
   let startValue = 0;
 
-  let progress = setInterval(() => {
+  const progress = setInterval(() => {
     startValue++;
     valueElement.textContent = `${startValue}%`;
-    progressElement.style.background = `conic-gradient(${color} ${
-      startValue * 3.6
-    }deg, #ededed 0deg)`;
+    progressElement.style.background = `conic-gradient(${color} ${startValue * 3.6}deg, #ededed 0deg)`;
 
-    if (startValue == endValue) {
+    if (startValue >= endValue) {
       clearInterval(progress);
     }
   }, speed);
 }
 
-// Circular progress bars initialization
-createCircularProgress(".html-css", ".html-progress", 90, "#fca61f", 30);
-createCircularProgress(".javascript", ".javascript-progress", 75, "#7d2ae8", 30);
-createCircularProgress(".php", ".php-progress", 80, "#20c997", 30);
-createCircularProgress(".reactjs", ".reactjs-progress", 30, "#3f396d", 30);
-
-// Filter functionality using jQuery
-$(document).ready(function () {
-  $(".filter-item").click(function () {
-    const value = $(this).attr("data-filter");
-    if (value === "all") {
-      $(".post").show(1000);
-    } else {
-      $(".post").not("." + value).hide(1000);
-      $(".post").filter("." + value).show(1000);
-    }
-  });
-});
-
-// Sticky navbar functionality
 document.addEventListener("DOMContentLoaded", function () {
+  createCircularProgress(".html-css", ".html-progress", 70, "#57c9c2", 25);
+  createCircularProgress(".javascript", ".javascript-progress", 90, "#f5c857", 25);
+  createCircularProgress(".php", ".php-progress", 50, "#6f7f3a", 25);
+  createCircularProgress(".reactjs", ".reactjs-progress", 70, "#4f5d2f", 25);
+
   const navbar = document.getElementById("navbar-top");
-  const body = document.body;
+  const backToTopButton = document.getElementById("btn-back-to-top");
 
   window.addEventListener("scroll", function () {
-    if (window.scrollY > 50) {
-      navbar.classList.add("fixed-top");
-      body.style.paddingTop = `${navbar.offsetHeight}px`;
+    if (window.scrollY > 30) {
+      navbar.classList.add("shadow-sm");
     } else {
-      navbar.classList.remove("fixed-top");
-      body.style.paddingTop = "0";
+      navbar.classList.remove("shadow-sm");
     }
+
+    if (document.documentElement.scrollTop > 150 || document.body.scrollTop > 150) {
+      backToTopButton.style.display = "block";
+    } else {
+      backToTopButton.style.display = "none";
+    }
+  });
+
+  backToTopButton.addEventListener("click", function () {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
   });
 });
 
-// Back-to-top button functionality
-const backToTopButton = document.getElementById("btn-back-to-top");
+// Project filter using jQuery
+$(document).ready(function () {
+  $(".filter-item").click(function () {
+    $(".filter-item").removeClass("active-filter");
+    $(this).addClass("active-filter");
 
-// Show/hide button on scroll
-window.addEventListener("scroll", function () {
-  if (document.documentElement.scrollTop > 20 || document.body.scrollTop > 20) {
-    backToTopButton.style.display = "block";
-  } else {
-    backToTopButton.style.display = "none";
-  }
-});
+    const value = $(this).attr("data-filter");
 
-// Scroll to top on button click
-backToTopButton.addEventListener("click", function () {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
+    if (value === "all") {
+      $(".post").fadeIn(300);
+    } else {
+      $(".post").hide();
+      $(".post." + value).fadeIn(300);
+    }
+  });
 });
