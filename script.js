@@ -40,15 +40,16 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  backToTopButton.addEventListener("click", function () {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth"
+  if (backToTopButton) {
+    backToTopButton.addEventListener("click", function () {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
     });
-  });
+  }
 });
 
-// Project filter using jQuery
 $(document).ready(function () {
   $(".filter-item").click(function () {
     $(".filter-item").removeClass("active-filter");
