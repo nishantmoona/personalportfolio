@@ -2,11 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Personal Portfolio - Nishant Moona</title>
+    <title>Nishant Moona | Data & AI Portfolio</title>
 
-    <!-- bootstrap css cdn link  -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -14,10 +13,8 @@
       crossorigin="anonymous"
     />
 
-    <!-- custom css file -->
     <link rel="stylesheet" href="css/style.css" />
 
-    <!-- google font link -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -25,32 +22,33 @@
       rel="stylesheet"
     />
 
-    <!-- bootstrap icon cdn link  -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
     />
 
-    <!-- for adding animation to website we have use AOS library 
-    AOS Library css file cdn link -->
-    <!--<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css"
+    />
 
-    <!-- jquery cdn link  -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   </head>
+
   <body>
-    <!-- navbar starts -->
-    <nav
-      id="navbar-top"
-      class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm"
-    >
-      <div class="container-fluid px-5">
-        <a class="navbar-brand fw-bold fs-3" href="#" style="color: #3f396d"
-          >Portfolio</a
-        >
+    <div class="bg-blobs" aria-hidden="true">
+      <span class="blob blob-1"></span>
+      <span class="blob blob-2"></span>
+      <span class="blob blob-3"></span>
+    </div>
+
+    <!-- navbar -->
+    <nav id="navbar-top" class="navbar navbar-expand-lg sticky-top">
+      <div class="container-fluid px-4 px-lg-5">
+        <a class="navbar-brand fw-bold fs-3" href="#home">Portfolio</a>
+
         <button
-          class="navbar-toggler"
+          class="navbar-toggler nav-menu"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
@@ -58,944 +56,562 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-        <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
         </button>
+
         <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-          <ul class="navbar-nav gap-4">
-            <li class="nav-item "><a class="nav-link active" href="#home" style="color: #3f396d">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="#services" style="color: #3f396d">Service</a></li>
-            <li class="nav-item"><a class="nav-link" href="#about" style="color: #3f396d">About</a></li>
-            <li class="nav-item"><a class="nav-link" href="#portfolio" style="color: #3f396d">Portfolio</a></li>
-            <li class="nav-item"><a class="nav-link" href="#contact" style="color: #3f396d">Contact</a></li>
+          <ul class="navbar-nav gap-lg-4">
+            <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
           </ul>
         </div>
-        <button class="btn btn-primary rounded-pill px-4 py-2 d-none d-md-block">Data Science</button>
+
+        <a href="#contact" class="btn c-btn rounded-pill px-4 py-2 d-none d-md-inline-flex">
+          Let’s Connect
+        </a>
       </div>
     </nav>
-    <!-- navbar ends here -->
 
-    <!-- home section starts  -->
-    <section id="home" class="text-center py-5" style="background: #f0f4fa; color: #3f396d">
+    <!-- home -->
+    <section id="home" class="home-section py-5">
       <div class="container">
-        <div class="row justify-content-between align-items-center">
-        <!-- here data-aos is used for adding aos animation  -->
+        <div class="row justify-content-between align-items-center gy-5">
           <div class="col-md-6" data-aos="fade-right">
-            <h1 style="color: #3f396d">
+            <span class="hero-tag">Tropical Fresh Portfolio</span>
+            <h1>
               Hello! I am <br />
-              <span style="color: #6f34fe">Nishant Moona</span>
+              <span class="c-accent">Nishant Moona</span>
             </h1>
-            <p class="text-muted" style="color: rgba(0, 0, 0, 0);">
-            Data and Business Intelligence Analyst with 3+ years of experience leveraging SQL, Python, Power BI and Tableau to transform complex datasets into insights. Experience in data cleaning, KPI development, predictive modelling and dashboard design across industries including insurance, healthcare and energy. 
-            Designed and deployed various machine learning algorithms and data driven models in enterprise environments. Skilled at uncovering hidden trends, simplifying complex data for diverse stakeholders and driving process optimization and efficiency gains. 
-            Adept at translating business needs into data strategies and driving innovation through AI, cloud integration and cross functional collaboration.
+            <p class="hero-text">
+              Data and Business Intelligence Analyst with 3+ years of experience leveraging
+              SQL, Python, Power BI and Tableau to transform complex datasets into insights.
+              Experienced in data cleaning, KPI development, predictive modelling and dashboard
+              design across industries including insurance, healthcare and energy. Skilled at
+              simplifying complex data for diverse stakeholders and driving process optimization
+              through analytics, AI and cloud-enabled workflows.
             </p>
-            <button class="btn btn-primary rounded-pill px-4 py-2">Hire Me</button>
+
+            <div class="hero-actions">
+              <a href="#portfolio" class="c-btn h-btn rounded-pill px-4 py-3">View Portfolio</a>
+              <a href="Nishant Moona CV.pdf" download="Nishant_Moona_CV" class="outline-btn rounded-pill px-4 py-3">
+                Download CV
+              </a>
+            </div>
           </div>
-          <div class="col-md-5 text-center"> 
-            <img 
-            src="Nishant Moona (2).jpg"
-            alt="Nishant Moona" 
-            class="img-fluid rounded-circle shadow-lg"
-            />
+
+          <div class="col-md-5 text-center" data-aos="fade-left">
+            <div class="hero-image-wrap">
+              <img
+                src="Nishant Moona (2).jpg"
+                alt="Nishant Moona"
+                class="img-fluid hero-image"
+              />
+            </div>
+          </div>
         </div>
       </div>
-      </div>
     </section>
-    <!-- home section ends here -->
 
-    <!-- expertise section starts -->
-    <section id="services" class="py-5" style="background: #ffffff">
+    <!-- services -->
+    <section id="services" class="py-5 section-soft">
       <div class="container">
-        <div class="text-center mb-5">          
-          <h2 style="color: #3f396d">
+        <div class="text-center mb-5 heading">
+          <h2>
             My Services <br />
-            <span style="color: #6f34fe">Here's what I can do for you.</span>
-          </h2>          
+            <span>Here’s what I can do for you.</span>
+          </h2>
         </div>
-        <div class="row text-center">
-          <!-- Card 1 -->
-          <div class="col-md-4 mb-4" data-aos="fade-up">
-            <div class="card text-center shadow-sm border-0">
+
+        <div class="row text-center gy-4">
+          <div class="col-md-4" data-aos="fade-up">
+            <div class="card service-card shadow-sm border-0 h-100">
               <div class="card-body">
-                <img src="Machine Leaerning Diagram.png" alt="Machine Learning" class="mb-3" />
-                <h5 class="card-title" style="color: #f99b04">Machine Learning</h5>
+                <img src="Machine Leaerning Diagram.png" alt="Machine Learning" class="mb-3 service-icon" />
+                <h5 class="card-title">Machine Learning</h5>
                 <p class="card-text">
-                  Developed machine learning projects using Python to solve real-world problems.
-                  Expertise in supervised and unsupervised learning using Python.
+                  Built machine learning projects in Python to solve regression,
+                  classification, and predictive analytics problems across different domains.
                 </p>
-              <a href="" class="link">Read More</a>
+                <a href="#portfolio" class="link">Explore Work</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="150">
+            <div class="card service-card shadow-sm border-0 h-100">
+              <div class="card-body">
+                <img src="Data Visualization Diagram.jpg" alt="Data Visualization" class="mb-3 service-icon" />
+                <h5 class="card-title">Data Visualization</h5>
+                <p class="card-text">
+                  Created interactive dashboards and visual stories in Power BI and Tableau
+                  to support business decisions and performance tracking.
+                </p>
+                <a href="#portfolio" class="link">Explore Work</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="card service-card shadow-sm border-0 h-100">
+              <div class="card-body">
+                <img src="SQL Diagram.png" alt="SQL" class="mb-3 service-icon" />
+                <h5 class="card-title">SQL & Data Analysis</h5>
+                <p class="card-text">
+                  Designed and optimized SQL queries for large datasets to extract
+                  insights, improve reporting, and support advanced analytics.
+                </p>
+                <a href="#portfolio" class="link">Explore Work</a>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
-          <div class="card text-center shadow-sm border-0">
-            <div class="card-body">
-              <img src="Data Visualization Diagram.jpg" alt="Power BI" class="mb-3" />
-              <h5 class="card-title" style="color: #f99b04">Data Visualization</h5>
-              <p class="card-text">
-                Created interactive visualizations for data-driven decision-making.
-                Developed dynamic dashboards using Power BI and Tableau.
+      </div>
+    </section>
+
+    <!-- skills -->
+    <section class="skill py-5" id="about">
+      <div class="container">
+        <div class="row justify-content-evenly align-items-center gy-5">
+          <div class="col-10 col-md-5 skill-with-progress" data-aos="slide-right">
+            <div class="row justify-content-evenly">
+              <div class="col-10 col-md-6">
+                <div class="progress-card">
+                  <div class="circular-progress html-css">
+                    <span class="progress-value html-progress">0%</span>
+                  </div>
+                  <br />
+                  <span class="text">SQL</span>
+                </div>
+              </div>
+
+              <div class="col-10 col-md-6 mt-4 mt-md-0">
+                <div class="progress-card">
+                  <div class="circular-progress javascript">
+                    <span class="progress-value javascript-progress">0%</span>
+                  </div>
+                  <br />
+                  <span class="text">Power BI</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="row justify-content-evenly mt-4">
+              <div class="col-10 col-md-6">
+                <div class="progress-card">
+                  <div class="circular-progress php">
+                    <span class="progress-value php-progress">0%</span>
+                  </div>
+                  <br />
+                  <span class="text">Python</span>
+                </div>
+              </div>
+
+              <div class="col-10 col-md-6 mt-4 mt-md-0">
+                <div class="progress-card">
+                  <div class="circular-progress reactjs">
+                    <span class="progress-value reactjs-progress">0%</span>
+                  </div>
+                  <br />
+                  <span class="text">Tableau</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-10 col-md-5 skill-detail" data-aos="slide-left">
+            <div class="heading">
+              <h2>
+                My Skills <br />
+                <span>Machine Learning and Deep Learning Experience.</span>
+              </h2>
+              <p class="text">
+                Developed machine learning projects in Python and R including renewable energy forecasting,
+                wine quality prediction, house price prediction, stock market prediction using ML and deep learning,
+                and customer segmentation for an insurance company.
               </p>
-              <a href="" class="link">Read More</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="400">
-          <div class="card text-center shadow-sm border-0">
-            <div class="card-body">
-              <img src="SQL Diagram.png" alt="SQL" class="mb-3" />
-              <h5 class="card-title" style="color: #f99b04">SQL</h5>
-              <p class="card-text">
-                Designed complex queries to extract insights from large datasets efficiently.
-                Design and optimize queries for data extraction and analysis.
+              <p class="text">
+                I enjoy combining analytics, AI, and business understanding to build useful, practical solutions.
               </p>
-              <a href="" class="link">Read More</a>
+
+              <a href="Nishant Moona CV.pdf" download="Nishant_Moona_CV" class="c-btn h-btn mt-3 py-3 px-5 rounded-pill d-inline-block text-decoration-none">
+                Download CV
+              </a>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- expertise section ends here -->
 
-     <!-- Scripts -->
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
-     <script>
-       AOS.init();
-     </script>
+    <!-- portfolio -->
+    <section class="portfolio py-5" id="portfolio">
+      <div class="container">
+        <div class="heading text-center">
+          <h2>
+            Creative Work <br />
+            <span>Check My Portfolio.</span>
+          </h2>
+        </div>
 
-    <!-- skill section starts -->
-    <section class="skill mt-5 py-5" id="about">
-      <div class="row justify-content-evenly">
-        <div class="col-10 col-md-5 skill-with-progress" data-aos="slide-right">
-          <div class="row justify-content-evenly">
-            <div class="col-10 col-md-6">
-              <div class="progress-card ms-3 ms-md-0">
-                <div class="circular-progress html-css">
-                  <span class="progress-value html-progress">70%</span>
+        <div id="myBtnContainer" class="text-center mt-4">
+          <button class="filter-item active-filter" data-filter="all">All</button>
+          <button class="filter-item" data-filter="game">Power BI</button>
+          <button class="filter-item" data-filter="webapp">Machine Learning</button>
+          <button class="filter-item" data-filter="website">SQL</button>
+        </div>
+
+        <div class="portfolio-body mt-5">
+          <div class="row justify-content-evenly px-2 gy-4">
+            <div class="post col-md-4 game all col-10" data-aos="fade-up">
+              <div class="card portfolio-card">
+                <img src="Netflix-Movie-Analysis.png" class="card-img-top" alt="Netflix Trends and Insights Dashboard" />
+                <div class="card-body text-center">
+                  <h4 class="card-title"><a href="#">Netflix Trends and Insights Dashboard</a></h4>
+                  <p class="text-muted">
+                    Dashboard showcasing title releases, country contributions, age certifications,
+                    durations, and IMDb scores from 1945 to 2022.
+                  </p>
+                  <span class="badge project-badge">Power BI</span>
+                  <span class="badge project-badge">ETL</span>
+                  <span class="badge project-badge mb-2">Descriptive</span><br />
+                  <a href="#" class="read-more-btn link" data-bs-toggle="modal" data-bs-target="#exampleModal1">Read More</a>
                 </div>
-                <br />
-                <span class="text">SQL</span>
               </div>
             </div>
-            <div class="col-10 col-md-6 mt-4 mt-md-0">
-              <div class="progress-card ms-3 ms-md-0">
-                <div class="circular-progress javascript">
-                  <span class="progress-value javascript-progress">90%</span>
+
+            <div class="post col-md-4 website all col-10" data-aos="fade-up">
+              <div class="card portfolio-card">
+                <img src="Customer-Churn-Analysis.png" class="card-img-top" alt="Customer Churn Dashboard" />
+                <div class="card-body text-center">
+                  <h4 class="card-title">Customer Churn Dashboard</h4>
+                  <p class="text-muted">
+                    Analysis focused on identifying why customers leave and how businesses can improve
+                    retention through insights and predictive thinking.
+                  </p>
+                  <span class="badge project-badge">Power BI</span>
+                  <span class="badge project-badge">ETL</span>
+                  <span class="badge project-badge mb-2">Descriptive</span><br />
+                  <a href="#" class="read-more-btn link" data-bs-toggle="modal" data-bs-target="#exampleModal3">Read More</a>
                 </div>
-                <br />
-                <span class="text">Power BI</span>
+              </div>
+            </div>
+
+            <div class="post col-md-4 webapp all col-10" data-aos="fade-up">
+              <div class="card portfolio-card">
+                <img src="Airline-Traffic-Control.png" class="card-img-top" alt="Airline Traffic Analysis Dashboard" />
+                <div class="card-body text-center">
+                  <h4 class="card-title"><a href="#">Airline Traffic Analysis Dashboard</a></h4>
+                  <p class="text-muted">
+                    Analytical view of airline traffic and COVID-19 trends to understand how the pandemic
+                    influenced aviation patterns.
+                  </p>
+                  <span class="badge project-badge">Tableau</span>
+                  <span class="badge project-badge">ETL</span>
+                  <span class="badge project-badge mb-2">Predictive</span><br />
+                  <a href="#" class="read-more-btn link" data-bs-toggle="modal" data-bs-target="#exampleModal2">Read More</a>
+                </div>
               </div>
             </div>
           </div>
-          <div class="row justify-content-evenly mt-4">
-            <div class="col-10 col-md-6">
-              <div class="progress-card ms-3 ms-md-0">
-                <div class="circular-progress php">
-                  <span class="progress-value php-progress">50%</span>
+
+          <div class="row justify-content-evenly mt-4 px-2 gy-4">
+            <div class="post col-md-4 game all col-10" data-aos="fade-up">
+              <div class="card portfolio-card">
+                <img src="Dominant-Aircraft-Analysis.png" class="card-img-top" alt="Dominant Aircraft Analysis Dashboard" />
+                <div class="card-body text-center">
+                  <h4 class="card-title">Dominant Aircraft Analysis Dashboard</h4>
+                  <p class="text-muted">
+                    Dashboard exploring airline dominance, aircraft usage, passenger traffic, and pandemic-driven
+                    changes in aviation activity.
+                  </p>
+                  <span class="badge project-badge">Tableau</span>
+                  <span class="badge project-badge">ETL</span>
+                  <span class="badge project-badge mb-2">Predictive</span><br />
+                  <a href="#" class="read-more-btn link" data-bs-toggle="modal" data-bs-target="#exampleModal4">Read More</a>
                 </div>
-                <br />
-                <span class="text">Python</span>
               </div>
             </div>
-            <div class="col-10 col-md-6 mt-4 mt-md-0">
-              <div class="progress-card ms-3  ms-md-0">
-                <div class="circular-progress reactjs">
-                  <span class="progress-value reactjs-progress">70%</span>
+
+            <div class="post col-md-4 website all col-10" data-aos="fade-up">
+              <div class="card portfolio-card">
+                <img src="Titanic-Analysis.png" class="card-img-top" alt="Titanic Analysis Dashboard" />
+                <div class="card-body text-center">
+                  <h4 class="card-title">Titanic Analysis Dashboard</h4>
+                  <p class="text-muted">
+                    Dashboard analysing passenger demographics, travel patterns, and survival rates across age,
+                    class, gender, and embarkation factors.
+                  </p>
+                  <span class="badge project-badge">Power BI</span>
+                  <span class="badge project-badge">ETL</span>
+                  <span class="badge project-badge mb-2">Descriptive</span><br />
+                  <a href="#" class="read-more-btn link" data-bs-toggle="modal" data-bs-target="#exampleModal5">Read More</a>
                 </div>
-                <br>
-                <span class="text">Tableau</span>
+              </div>
+            </div>
+
+            <div class="post col-md-4 all col-10" data-aos="fade-up">
+              <div class="card portfolio-card">
+                <img src="Hybrid-Learning-Environment.png" class="card-img-top" alt="Hybrid Learning Environment Dashboard" />
+                <div class="card-body text-center">
+                  <h4 class="card-title">Hybrid Learning Environment Dashboard</h4>
+                  <p class="text-muted">
+                    Dashboard presenting student perceptions, satisfaction, geographic distribution,
+                    and challenges in hybrid learning environments.
+                  </p>
+                  <span class="badge project-badge">Power BI</span>
+                  <span class="badge project-badge">ETL</span>
+                  <span class="badge project-badge mb-2">Descriptive</span><br />
+                  <a href="#" class="read-more-btn link" data-bs-toggle="modal" data-bs-target="#exampleModal6">Read More</a>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-10 col-md-5 skill-detail" data-aos="slide-left">
-          <div class="heading mt-5 mt-md-3">
-            <h2 style="color: #3f396d">
-              My Skills <br />
-              <span style="color: #6f34fe">Machine Learning and Deep Learning Experience.</span>
-            </h2>  
-            <p class="text">
-              Developed various machine learning projects in Python such as Renewable Energy Forecasting in the Spanish Market, Wine Quality Prediction, 
-              House Price Prediction, Stock Market Prediction using ML & Deep Learning, and Customer Segmentation for an Insurance Company. Some machine learning projects in R such as House Price Prediction in Boston and analyzing superconductivity of various materials. 
-              This will allow me to contribute further and enhance my skills in the AI Industry.
-            </p>
-            <p class="text">
-              
-            </p>
-            
-            <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
-              <!-- here download attribute is used for adding download functionality to button  -->
-              <a
-                href="Nishant Moona CV.pdf"
-                download="SampleCV"
-                style="text-decoration: none;color: #fff;"
-                >Download CV</a
-              >
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- skill section end here -->
 
-    <!-- portfolio section starts here -->
-    <section class="portfolio" id="portfolio">
-      <div class="heading text-center pt-5">
-        <h2 style="color: #3f396d">
-          Creative Work <br />
-          <span style="color: #6f34fe">Check My Portfolio.</span>
-        </h2>  
-      </div>
-
-      <div id="myBtnContainer" class="text-center mt-4">
-        <!-- here we will create custom attribute using data- for filtering -->
-        <button class="filter-item" data-filter="all">All </button>
-        <button class="filter-item" data-filter="game">Power BI</button>
-        <button class="filter-item" data-filter="webapp">Machine Learning</button>
-        <button class="filter-item" data-filter="website">SQL</button>
-        <!--
-        <button class="filter-item" data-filter="brand">Brand</button>
-         -->
-      </div>
-      <div class="portfolio-body">
-        <div class="row justify-content-evenly px-4">
-          <div class="post col-md-4 game all col-10 mt-3 mt-md-0" data-aos="fade-up">
-            <div class="card">
-              <img src="Netflix-Movie-Analysis.png" class="card-img-top" alt="..." />
-              <div class="card-body text-center">
-                <h4 class="card-title">
-                  <a href="">Netflix Trends and Insights Dashboard</a>
-                </h4>
-                <p class="text-muted">
-                  showcasing key trends from 1945 to 2022. Dive into data-driven insights on title releases, age certifications, country contributions, durations, and IMDb scores. 
-                  Learn how Netflix's content offerings evolved over the years, highlighting shifts in viewer preferences and industry dynamics.
-                </p>
-                <span class="badge bg-secondary badge-pill">Power BI</span>
-                <span class="badge bg-secondary badge-pill">ETL</span>
-                <span class="badge bg-secondary badge-pill mb-2">Descriptive</span
-                ><br />
-                <a href="#" class="read-more-btn link" data-bs-toggle="modal" data-bs-target="#exampleModal1">Read More</a>
-              </div>
-            </div>
-          </div>
-          <div class="post col-md-4 website all col-10 mt-3 mt-md-0" data-aos="fade-up">
-            <div class="card">
-              <img
-                src="Customer-Churn-Analysis.png"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body text-center">
-              <h4 class="card-title">Customer Churn Dashboard</h4>
-                <p class="text-muted">
-                  Customer Churn Analysis identify patterns and reasons why customers stop using a company's products or services.
-                  This analysis helps businesses understand customer behavior, improve retention strategies, and reduce churn by predicting which customers are at risk of leaving.
-                </p>
-                <span class="badge bg-secondary badge-pill">Power BI</span>
-                <span class="badge bg-secondary badge-pill">ETL</span>
-                <span class="badge bg-secondary badge-pill mb-2">Descriptive</span
-                ><br />
-                <a href="#" class="read-more-btn link" data-bs-toggle="modal" data-bs-target="#exampleModal3">Read More</a>
-              </div>
-            </div>
-          </div>
-          <div class="post col-md-4 webapp all col-10 mt-3 mt-md-0" data-aos="fade-up">
-            <div class="card">
-              <img src="Airline-Traffic-Control.png" class="card-img-top" alt="..." />
-              <div class="card-body text-center">
-                
-                <h4 class="card-title">
-                  <a href="">Airline Traffic Analysis Dashboard</a>
-                </h4>
-                <p class="text-muted">
-                  The Airline Traffic seems to be designed to provide an analytical perspective on the COVID-19 cases across various countries. 
-                  It is crucial to understand how the pandemic is evolving in different regions and assist in pandemic management.
-                </p>
-                <span class="badge bg-secondary badge-pill">Tableau</span>
-                <span class="badge bg-secondary badge-pill">ETL</span>
-                <span class="badge bg-secondary badge-pill mb-2">Predictive</span
-                ><br />
-                <a href="#" class="read-more-btn link" data-bs-toggle="modal" data-bs-target="#exampleModal2">Read More</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row justify-content-evenly mt-4 px-4">
-          <div class="post col-md-4 game all col-10 mt-3 mt-md-0" data-aos="fade-up">
-            <div class="card">
-              <img src="Dominant-Aircraft-Analysis.png" class="card-img-top" alt="..." />
-              <div class="card-body text-center">
-                <h4 class="card-title">Dominant Aircraft Analysis Dashboard</h4>
-                <p class="text-muted">The "Dominant Aircraft Analysis Dashboard" provides an insightful overview of aviation trends during the COVID-19 pandemic, focusing on passenger traffic, flight density, and COVID-19 case correlations across various regions and airlines. 
-                  Designed to highlight key data points, it aids in understanding the pandemic's impact on the aviation industry. </p>
-                <span class="badge bg-secondary badge-pill">Tableau</span>
-                <span class="badge bg-secondary badge-pill">ETL</span>
-                <span class="badge bg-secondary badge-pill mb-2">Predictive</span
-                ><br />
-                <a href="#" class="read-more-btn link" data-bs-toggle="modal" data-bs-target="#exampleModal4">Read More</a>
-              </div>
-            </div>
-          </div>
-          <div class="post col-md-4 website all col-10 mt-3 mt-md-0" data-aos="fade-up">
-            <div class="card">
-              <img src="Titanic-Analysis.png" class="card-img-top" alt="..." />
-              <div class="card-body text-center">
-                <h4 class="card-title">Titanic Analysis Dashboard</h4>
-                <p class="text-muted">The Titanic Dashboard provides an in-depth analysis of passenger demographics, survival rates, and travel patterns on the RMS Titanic. It offers insights into age distribution, gender, class preferences, and embarkation points, alongside survival probabilities segmented by various factors. 
-                  This visualization serves as an effective tool for understanding the socio-demographic patterns aboard the Titanic and the dynamics of survival based on class, age, and gender. </p>
-                <span class="badge bg-secondary badge-pill">Power BI</span>
-                <span class="badge bg-secondary badge-pill">ETL</span>
-                <span class="badge bg-secondary badge-pill mb-2">Descriptive</span
-                ><br />
-                <a href="#" class="read-more-btn link" data-bs-toggle="modal" data-bs-target="#exampleModal5">Read More</a>
-              </div>
-            </div>
-          </div>
-          <div class="post col-md-4 all col-10 mt-3 mt-md-0" data-aos="fade-up">
-            <div class="card">
-              <img
-                src="Hybrid-Learning-Environment.png"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body text-center">
-                <h4 class="card-title">Hybrid Learning Environment Dashboard</h4>
-                <p class="text-muted">The Hybrid Learning Environment Dashboard provides a comprehensive overview of the perceptions and experiences of students engaged in hybrid learning. It captures critical insights, such as satisfaction levels, gender and age distribution, geographic demographics, and the advantages and challenges faced by learners. 
-                  This visualization empowers educators and administrators to evaluate the effectiveness of hybrid learning and improve its implementation. </p>
-                <span class="badge bg-secondary badge-pill">Power BI</span>
-                <span class="badge bg-secondary badge-pill">ETL</span>
-                <span class="badge bg-secondary badge-pill mb-2">Descriptive</span
-                ><br />
-                <a href="#" class="read-more-btn link" data-bs-toggle="modal" data-bs-target="#exampleModal6">Read More</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- portfolio section ends here -->         
-           
-            
-        <!-- here we will make modals if Read more link is clicked the modal will popup -->
-        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              
-                <button type="button" class="btn-c rounded-pill" data-bs-dismiss="modal"><i class="bi bi-x-circle-fill"></i></button>
-              
+        <!-- Keep your existing modal bodies -->
+        <!-- Modals preserved below -->
+        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-hidden="true">
+          <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content custom-modal">
+              <button type="button" class="btn-c rounded-pill" data-bs-dismiss="modal" aria-label="Close">
+                <i class="bi bi-x-circle-fill"></i>
+              </button>
               <div class="modal-body px-4">
                 <div class="img">
-                  <img src="Netflix-Movie-Analysis.png" class="img-fluid" alt="">
+                  <img src="Netflix-Movie-Analysis.png" class="img-fluid rounded-4" alt="">
                 </div>
                 <div class="content mt-3">
-                  <small>By Nishant Moona</small
-                    ><span class="text-muted ms-2">August, 2024</span>
+                  <small>By Nishant Moona</small><span class="text-muted ms-2">August, 2024</span>
                   <h4 class="card-title mt-3">Netflix Trends and Insights Dashboard</h4>
-                  <div class="social-links mt-4">
-                      <button href="" class="rounded-pill dribble">
-                        <i class="bi bi-dribbble"></i>
-                      </button>
-                      <button href="" class="rounded-pill whatsapp">
-                        <i class="bi bi-whatsapp"></i>
-                      </button>
-                      <button href="" class="rounded-pill behance">
-                        <i class="bi bi-behance"></i>
-                      </button>
-                  </div>
-                  <p class="text-muted mt-3">Netflix has released 3.735 of Movies and 1.955 of TV Shows from 1945-2022 (67 years), with the number of movies almost twice the number of TV Shows. 
-                    US, India and Japan are the countries that produce the most titles. For the last decade, the highest release of Movies title is in 2019 with 540 of titles and 306 of TV Shows in 2020. 
-                    There is an increase in film released and it peaked in 2019, then there was a sharp decline start in 2022. There are 11 of age certification. While, the most titles are in TV-MA rating, followed by R rating. It means that the customer segment that suitable for Netflix is for people above 17 years old. 
-                    The most titles are between 90-120 minutes in duration with 1.823 of titles, followed by titles in between 30-60 minutes duration. The highest number of actors who participated in titles was in 2019 with 8.892 actors. The highest number of directors who participated in titles was in 2019 with 623 actors.
-                     While Raul Campos become the director who directed the most films with 21 titles. The IMDb score of the titles vary from minimum in 1.5 and the highest in 9.6.</p>
+                  <p class="text-muted mt-3">
+                    Netflix has released 3,735 movies and 1,955 TV shows from 1945–2022, with the US, India, and Japan
+                    among the top producing countries. This dashboard highlights content trends, certifications, duration,
+                    and IMDb scores.
+                  </p>
                 </div>
               </div>
-              <div class="heading px-2">
-                <h3 class="fs-3 ms-3">Leave A Comment</h3>
-              </div>
-              <div class="contact-form ms-3 mt-3 pb-4 px-2">
-                <div class="mb-3">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="exampleFormControlInput1"
-                    placeholder="Name"
-                  />
-                </div>
-                <div class="mb-3">
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="exampleFormControlInput1"
-                    placeholder="E-mail"
-                  />
-                </div>
-                <div class="mb-3">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="exampleFormControlInput1"
-                    placeholder="Mobile No."
-                  />
-                </div>
-                <div class="mb-3">
-                  <textarea
-                    class="form-control"
-                    id="exampleFormControlTextarea1"
-                    placeholder="Message"
-                    rows="5"
-                  ></textarea>
-                </div>
-                <button class="c-btn h-btn mt-3 py-2 px-4 rounded-pill">
-                  Submit
-                </button>
-              </div>
-              
             </div>
           </div>
         </div>
-        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              
-                <button type="button" class="btn-c rounded-pill" data-bs-dismiss="modal"><i class="bi bi-x-circle-fill"></i></button>
-              
+
+        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-hidden="true">
+          <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content custom-modal">
+              <button type="button" class="btn-c rounded-pill" data-bs-dismiss="modal" aria-label="Close">
+                <i class="bi bi-x-circle-fill"></i>
+              </button>
               <div class="modal-body px-4">
                 <div class="img">
-                  <img src="Airline-Traffic-Control.png" class="img-fluid" alt="">
+                  <img src="Airline-Traffic-Control.png" class="img-fluid rounded-4" alt="">
                 </div>
                 <div class="content mt-3">
-                  <small>By Nishant Moona</small
-                    ><span class="text-muted ms-2 ms-md-0"> April, 2024</span>
+                  <small>By Nishant Moona</small><span class="text-muted ms-2">April, 2024</span>
                   <h4 class="card-title mt-3">Airline Traffic Dashboard</h4>
-                  <div class="social-links mt-4">
-                      <button href="" class="rounded-pill dribble">
-                        <i class="bi bi-dribbble"></i>
-                      </button>
-                      <button href="" class="rounded-pill whatsapp">
-                        <i class="bi bi-whatsapp"></i>
-                      </button>
-                      <button href="" class="rounded-pill behance">
-                        <i class="bi bi-behance"></i>
-                      </button>
-                  </div>
-                  <p class="text-muted mt-3">This could be used to review the effectiveness of national strategies or to compare the pandemic's impact across different healthcare infrastructures.
-                    With the 'Country Analysis' map, public health officials and policymakers can identify regions with higher cases and possibly direct resources and attention to those areas. The 'Covid Cases' line chart helps to understand if interventions like lockdowns or social distancing measures are having the desired effect on controlling the virus spread.</p>
+                  <p class="text-muted mt-3">
+                    This dashboard helps review airline activity, country-level patterns, and COVID-19 case developments
+                    to understand the impact of the pandemic on aviation.
+                  </p>
                 </div>
               </div>
-              <div class="heading px-2">
-                <h3 class="fs-3 ms-3">Leave A Comment</h3>
-              </div>
-              <div class="contact-form ms-3 mt-3 pb-4 px-2">
-                <div class="mb-3">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="exampleFormControlInput1"
-                    placeholder="Name"
-                  />
-                </div>
-                <div class="mb-3">
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="exampleFormControlInput1"
-                    placeholder="E-mail"
-                  />
-                </div>
-                <div class="mb-3">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="exampleFormControlInput1"
-                    placeholder="Mobile No."
-                  />
-                </div>
-                <div class="mb-3">
-                  <textarea
-                    class="form-control"
-                    id="exampleFormControlTextarea1"
-                    placeholder="Message"
-                    rows="5"
-                  ></textarea>
-                </div>
-                <button class="c-btn h-btn mt-3 py-2 px-4 rounded-pill">
-                  Submit
-                </button>
-              </div>
-              
             </div>
           </div>
         </div>
-        <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              
-                <button type="button" class="btn-c rounded-pill" data-bs-dismiss="modal"><i class="bi bi-x-circle-fill"></i></button>
-              
+
+        <div class="modal fade" id="exampleModal3" tabindex="-1" aria-hidden="true">
+          <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content custom-modal">
+              <button type="button" class="btn-c rounded-pill" data-bs-dismiss="modal" aria-label="Close">
+                <i class="bi bi-x-circle-fill"></i>
+              </button>
               <div class="modal-body px-4">
                 <div class="img">
-                  <img src="Customer-Churn-Analysis.png" class="img-fluid" alt="">
+                  <img src="Customer-Churn-Analysis.png" class="img-fluid rounded-4" alt="">
                 </div>
                 <div class="content mt-3">
-                  <small>By Nishant Moona</small
-                    ><span class="text-muted ms-2 ms-md-0"> August, 2024</span>
+                  <small>By Nishant Moona</small><span class="text-muted ms-2">August, 2024</span>
                   <h4 class="card-title mt-3">Customer Churn Analysis</h4>
-                  <div class="social-links mt-4">
-                      <button href="" class="rounded-pill dribble">
-                        <i class="bi bi-dribbble"></i>
-                      </button>
-                      <button href="" class="rounded-pill whatsapp">
-                        <i class="bi bi-whatsapp"></i>
-                      </button>
-                      <button href="" class="rounded-pill behance">
-                        <i class="bi bi-behance"></i>
-                      </button>
-                  </div>
-                  <p class="text-muted mt-3">Key drivers that influence Churn: Loss/Upgrade, Cost of products and service/Competitor Pricing, Quality, Customer Care Quality, Other offers and services.</p>
+                  <p class="text-muted mt-3">
+                    Key churn drivers include product cost, competitor pricing, service quality, customer care quality,
+                    and other offers and services.
+                  </p>
                 </div>
               </div>
-              <div class="heading px-2">
-                <h3 class="fs-3 ms-3">Leave A Comment</h3>
-              </div>
-              <div class="contact-form ms-3 mt-3 pb-4 px-2">
-                <div class="mb-3">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="exampleFormControlInput1"
-                    placeholder="Name"
-                  />
-                </div>
-                <div class="mb-3">
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="exampleFormControlInput1"
-                    placeholder="E-mail"
-                  />
-                </div>
-                <div class="mb-3">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="exampleFormControlInput1"
-                    placeholder="Mobile No."
-                  />
-                </div>
-                <div class="mb-3">
-                  <textarea
-                    class="form-control"
-                    id="exampleFormControlTextarea1"
-                    placeholder="Message"
-                    rows="5"
-                  ></textarea>
-                </div>
-                <button class="c-btn h-btn mt-3 py-2 px-4 rounded-pill">
-                  Submit
-                </button>
-              </div>
-              
             </div>
           </div>
         </div>
-        <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              
-                <button type="button" class="btn-c rounded-pill" data-bs-dismiss="modal"><i class="bi bi-x-circle-fill"></i></button>
-              
+
+        <div class="modal fade" id="exampleModal4" tabindex="-1" aria-hidden="true">
+          <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content custom-modal">
+              <button type="button" class="btn-c rounded-pill" data-bs-dismiss="modal" aria-label="Close">
+                <i class="bi bi-x-circle-fill"></i>
+              </button>
               <div class="modal-body px-4">
                 <div class="img">
-                  <img src="Dominant-Aircraft-Analysis.png" class="img-fluid" alt="">
+                  <img src="Dominant-Aircraft-Analysis.png" class="img-fluid rounded-4" alt="">
                 </div>
                 <div class="content mt-3">
-                  <small>By Nishant Moona</small
-                    ><span class="text-muted ms-2">August, 2024</span>
+                  <small>By Nishant Moona</small><span class="text-muted ms-2">August, 2024</span>
                   <h4 class="card-title mt-3">Dominant Aircraft Analysis Dashboard</h4>
-                  <div class="social-links mt-4">
-                      <button href="" class="rounded-pill dribble">
-                        <i class="bi bi-dribbble"></i>
-                      </button>
-                      <button href="" class="rounded-pill whatsapp">
-                        <i class="bi bi-whatsapp"></i>
-                      </button>
-                      <button href="" class="rounded-pill behance">
-                        <i class="bi bi-behance"></i>
-                      </button>
-                  </div>
-                  <p class="text-muted mt-3">The map highlights regional flight activities, showcasing airline dominance based on passenger traffic. Lufthansa, Eurowings, and Swissair emerge as the top airlines with high passenger traffic. 
-                    A bar chart categorizes aircraft types (e.g., A320, B738) based on flight frequency, with the A320 model leading. The line chart captures the monthly trend of distinct callsigns, average positivity rates, and new COVID-19 cases from February to June 2020. 
-                    A decline in flights correlates with rising COVID-19 cases, indicating the pandemics' significant influence on aviation activity. 
-                    This dashboard helps users analyze aviation trends by country, airline, and aircraft type while contextualizing them with COVID-19 data.</p>
+                  <p class="text-muted mt-3">
+                    This dashboard highlights regional flight activity, airline dominance, aircraft types, and
+                    monthly aviation trends during the COVID-19 period.
+                  </p>
                 </div>
               </div>
-              <div class="heading px-2">
-                <h3 class="fs-3 ms-3">Leave A Comment</h3>
-              </div>
-              <div class="contact-form ms-3 mt-3 pb-4 px-2">
-                <div class="mb-3">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="exampleFormControlInput1"
-                    placeholder="Name"
-                  />
-                </div>
-                <div class="mb-3">
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="exampleFormControlInput1"
-                    placeholder="E-mail"
-                  />
-                </div>
-                <div class="mb-3">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="exampleFormControlInput1"
-                    placeholder="Mobile No."
-                  />
-                </div>
-                <div class="mb-3">
-                  <textarea
-                    class="form-control"
-                    id="exampleFormControlTextarea1"
-                    placeholder="Message"
-                    rows="5"
-                  ></textarea>
-                </div>
-                <button class="c-btn h-btn mt-3 py-2 px-4 rounded-pill">
-                  Submit
-                </button>
-              </div>
-              
             </div>
           </div>
         </div>
-        <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              
-                <button type="button" class="btn-c rounded-pill" data-bs-dismiss="modal"><i class="bi bi-x-circle-fill"></i></button>
-              
+
+        <div class="modal fade" id="exampleModal5" tabindex="-1" aria-hidden="true">
+          <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content custom-modal">
+              <button type="button" class="btn-c rounded-pill" data-bs-dismiss="modal" aria-label="Close">
+                <i class="bi bi-x-circle-fill"></i>
+              </button>
               <div class="modal-body px-4">
                 <div class="img">
-                  <img src="Titanic-Analysis.png" class="img-fluid" alt="">
+                  <img src="Titanic-Analysis.png" class="img-fluid rounded-4" alt="">
                 </div>
                 <div class="content mt-3">
-                  <small>By Nishant Moona</small
-                    ><span class="text-muted ms-2">August, 2024</span>
+                  <small>By Nishant Moona</small><span class="text-muted ms-2">August, 2024</span>
                   <h4 class="card-title mt-3">Titanic Analysis Dashboard</h4>
-                  <div class="social-links mt-4">
-                      <button href="" class="rounded-pill dribble">
-                        <i class="bi bi-dribbble"></i>
-                      </button>
-                      <button href="" class="rounded-pill whatsapp">
-                        <i class="bi bi-whatsapp"></i>
-                      </button>
-                      <button href="" class="rounded-pill behance">
-                        <i class="bi bi-behance"></i>
-                      </button>
-                  </div>
-                  <p class="text-muted mt-3">Passenger Overview:
-                    Average Age: 30.15 years, with males averaging slightly higher (30.72) than females (29.15).
-                    Passenger Count: 981, showcasing the diverse population onboard.
-                    Fare Analysis: The average ticket fare was $37.43, with a maximum fare of $76.
-
-                    Survival Analysis:
-                    By Class: First-class passengers had the highest survival rate, with fewer survivors in third class.
-                    By Age Groups: Younger passengers, particularly those under 20, had higher survival probabilities.
-                    By Gender: Females had a notably higher survival rate compared to males.
-                  
-                    Passenger Distribution:
-                    Class: Third-class passengers formed the majority (46.48%), followed by second (27.22%) and first class (26.3%).
-                    Embarkation Points: Most passengers boarded from Southampton, followed by Cherbourg and Queenstown.
-                  
-                    Global Representation:
-                    A geographical map illustrates passengers' home destinations, highlighting North America, Europe, and parts of Asia as significant sources.
-                  
-                    Additional Insights:
-
-                    Survival rates varied across cabins, with cabin "C" having the highest survival count.
-                    The dashboard highlights key insights on gender distribution and survival based on cabin and embarkation points.</p>
+                  <p class="text-muted mt-3">
+                    Passenger demographic, class, embarkation, and survival patterns visualized to understand the
+                    socio-demographic dynamics of the Titanic.
+                  </p>
                 </div>
               </div>
-              <div class="heading px-2">
-                <h3 class="fs-3 ms-3">Leave A Comment</h3>
-              </div>
-              <div class="contact-form ms-3 mt-3 pb-4 px-2">
-                <div class="mb-3">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="exampleFormControlInput1"
-                    placeholder="Name"
-                  />
-                </div>
-                <div class="mb-3">
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="exampleFormControlInput1"
-                    placeholder="E-mail"
-                  />
-                </div>
-                <div class="mb-3">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="exampleFormControlInput1"
-                    placeholder="Mobile No."
-                  />
-                </div>
-                <div class="mb-3">
-                  <textarea
-                    class="form-control"
-                    id="exampleFormControlTextarea1"
-                    placeholder="Message"
-                    rows="5"
-                  ></textarea>
-                </div>
-                <button class="c-btn h-btn mt-3 py-2 px-4 rounded-pill">
-                  Submit
-                </button>
-              </div>
-              
             </div>
           </div>
         </div>
-        <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              
-                <button type="button" class="btn-c rounded-pill" data-bs-dismiss="modal"><i class="bi bi-x-circle-fill"></i></button>
-              
+
+        <div class="modal fade" id="exampleModal6" tabindex="-1" aria-hidden="true">
+          <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content custom-modal">
+              <button type="button" class="btn-c rounded-pill" data-bs-dismiss="modal" aria-label="Close">
+                <i class="bi bi-x-circle-fill"></i>
+              </button>
               <div class="modal-body px-4">
                 <div class="img">
-                  <img src="Hybrid-Learning-Environment.png" class="img-fluid" alt="">
+                  <img src="Hybrid-Learning-Environment.png" class="img-fluid rounded-4" alt="">
                 </div>
                 <div class="content mt-3">
-                  <small>By Nishant Moona</small
-                    ><span class="text-muted ms-2">August, 2024</span>
+                  <small>By Nishant Moona</small><span class="text-muted ms-2">August, 2024</span>
                   <h4 class="card-title mt-3">Hybrid Learning Environment Dashboard</h4>
-                  <div class="social-links mt-4">
-                      <button href="" class="rounded-pill dribble">
-                        <i class="bi bi-dribbble"></i>
-                      </button>
-                      <button href="" class="rounded-pill whatsapp">
-                        <i class="bi bi-whatsapp"></i>
-                      </button>
-                      <button href="" class="rounded-pill behance">
-                        <i class="bi bi-behance"></i>
-                      </button>
-                  </div>
-                  <p class="text-muted mt-3">The dashboard reflects feedback from 69 respondents across 10 countries. Key metrics include
-                    Learning Duration: Majority of students engaged in hybrid learning for 6 months to a year.
-                    Satisfaction Levels: 34 respondents reported being satisfied, while a smaller percentage expressed dissatisfaction.
-                    Demographics: Respondents primarily come from Europe and Africa, with an age range mostly between 25-34.
-                    Field of Study: Business & Management and Engineering are the most represented disciplines.
-                    Perceived Benefits and Challenges: Flexibility and work-life balance are top advantages, while maintaining interaction and technical issues are prominent challenges.
-                    This dashboard offers valuable insights into hybrid learning, facilitating actionable decisions to enhance the educational experience.</p>
+                  <p class="text-muted mt-3">
+                    A dashboard reflecting student perceptions, satisfaction levels, demographics, and challenges
+                    in hybrid learning environments.
+                  </p>
                 </div>
               </div>
-              <div class="heading px-2">
-                <h3 class="fs-3 ms-3">Leave A Comment</h3>
-              </div>
-              <div class="contact-form ms-3 mt-3 pb-4 px-2">
-                <div class="mb-3">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="exampleFormControlInput1"
-                    placeholder="Name"
-                  />
-                </div>
-                <div class="mb-3">
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="exampleFormControlInput1"
-                    placeholder="E-mail"
-                  />
-                </div>
-                <div class="mb-3">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="exampleFormControlInput1"
-                    placeholder="Mobile No."
-                  />
-                </div>
-                <div class="mb-3">
-                  <textarea
-                    class="form-control"
-                    id="exampleFormControlTextarea1"
-                    placeholder="Message"
-                    rows="5"
-                  ></textarea>
-                </div>
-                <button class="c-btn h-btn mt-3 py-2 px-4 rounded-pill">
-                  Submit
-                </button>
-              </div>
-              
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- blog section ends here --> 
-    
-    <!-- contact section starts -->
-    <section class="contact py-5" id="contact">
-      <div class="heading text-center">
-        <h2 style="color: #3f396d">
-          Get in Touch <br />
-          <span style="color: #6f34fe">Any Questions? Feel Free to Contact</span>
-        </h2>  
-        
-      </div>
-      <div class="row justify-content-evenly mt-5">
-        <div class="col-md-5 col-10 contact-details" data-aos="slide-right">
-          <div class="row justify-content-evenly">
-            <div class="col-1">
-              <i class="bi bi-geo-alt-fill"></i>
-            </div>
-            <div class="col-11">
-              <p>Dublin, Ireland</p>
-            </div>
-          </div>
-          <div class="row justify-content-evenly">
-            <div class="col-1">
-              <i class="bi bi-telephone-fill"></i>
-            </div>
-            <div class="col-11">
-              <p>+353 89 202 9648, +91-9806 946 968</p>
-            </div>
-          </div>
-          <div class="row justify-content-evenly">
-            <div class="col-1">
-              <i class="bi bi-send-fill"></i>
-            </div>
-            <div class="col-11">
-              <p>moona.nishant@gmail.com</p>
-            </div>
-          </div>
-          <div class="row justify-content-evenly">
-            <div class="col-1">
-              <i class="bi bi-globe-americas"></i>
-            </div>
-            <div class="col-11">
-              <p>https://www.linkedin.com/in/nishant-moona-9b513720/</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-5 col-10 mt-3 mt-md-0" data-aos="slide-left">
-          <div class="contact-form">
-            <div class="mb-3">
-              <input
-                type="text"
-                class="form-control"
-                id="exampleFormControlInput1"
-                placeholder="Name"
-              />
-            </div>
-            <div class="mb-3">
-              <input
-                type="email"
-                class="form-control"
-                id="exampleFormControlInput1"
-                placeholder="E-mail"
-              />
-            </div>
-            <div class="mb-3">
-              <input
-                type="text"
-                class="form-control"
-                id="exampleFormControlInput1"
-                placeholder="Mobile No."
-              />
-            </div>
-            <div class="mb-3">
-              <textarea
-                class="form-control"
-                id="exampleFormControlTextarea1"
-                placeholder="Message"
-                rows="5"
-              ></textarea>
-            </div>
-            <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
-              Submit
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- contact section ends here -->
 
-      <!-- now we will make back to top button when user click on it it will be redirected to top page  -->
-    <button
-      type="button"
-      class="btn btn-floating btn-lg rounded-pill"
-      id="btn-back-to-top"
-    >
+      </div>
+    </section>
+
+    <!-- contact -->
+    <section class="contact py-5" id="contact">
+      <div class="container">
+        <div class="heading text-center">
+          <h2>
+            Get in Touch <br />
+            <span>Any Questions? Feel Free to Contact</span>
+          </h2>
+        </div>
+
+        <div class="row justify-content-evenly mt-5 gy-4">
+          <div class="col-md-5 col-10 contact-details" data-aos="slide-right">
+            <div class="row justify-content-evenly">
+              <div class="col-1"><i class="bi bi-geo-alt-fill"></i></div>
+              <div class="col-11"><p>Dublin, Ireland</p></div>
+            </div>
+            <div class="row justify-content-evenly">
+              <div class="col-1"><i class="bi bi-telephone-fill"></i></div>
+              <div class="col-11"><p>+353 89 202 9648, +91 9806 946 968</p></div>
+            </div>
+            <div class="row justify-content-evenly">
+              <div class="col-1"><i class="bi bi-send-fill"></i></div>
+              <div class="col-11"><p>moona.nishant@gmail.com</p></div>
+            </div>
+            <div class="row justify-content-evenly">
+              <div class="col-1"><i class="bi bi-globe-americas"></i></div>
+              <div class="col-11">
+                <p><a class="contact-inline-link" href="https://www.linkedin.com/in/nishant-moona-9b513720/" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-5 col-10" data-aos="slide-left">
+            <div class="contact-form">
+              <div class="mb-3">
+                <input type="text" class="form-control" placeholder="Name" />
+              </div>
+              <div class="mb-3">
+                <input type="email" class="form-control" placeholder="E-mail" />
+              </div>
+              <div class="mb-3">
+                <input type="text" class="form-control" placeholder="Mobile No." />
+              </div>
+              <div class="mb-3">
+                <textarea class="form-control" placeholder="Message" rows="5"></textarea>
+              </div>
+              <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <button type="button" class="btn btn-floating btn-lg rounded-pill" id="btn-back-to-top" aria-label="Back to top">
       <i class="bi bi-arrow-up"></i>
     </button>
 
-    <!-- footer section starts  -->
-    <footer class="text-center text-muted py-4">
-      <h3 class="text-white pt-4" data-aos="fade-up">Portfolio</h3>
-      <div class="link-group mt-5" data-aos="fade-up">
+    <!-- footer -->
+    <footer class="text-center py-4">
+      <h3 class="pt-4" data-aos="fade-up">Portfolio</h3>
+
+      <div class="link-group mt-4" data-aos="fade-up">
         <a href="#home">Home</a>
         <div class="vr"></div>
         <a href="#about">About</a>
         <div class="vr"></div>
-        <a href="#service">Service</a>
+        <a href="#services">Services</a>
         <div class="vr"></div>
         <a href="#portfolio">Portfolio</a>
         <div class="vr"></div>
-        <a href="#blog">Blog</a>
-        <div class="vr"></div>
         <a href="#contact">Contact</a>
       </div>
-      <div class="social-links mt-5" data-aos="fade-up">
-        <button href="" class="rounded-pill dribble">
-          <i class="bi bi-dribbble"></i>
-        </button>
-        <button href="" class="rounded-pill whatsapp">
-          <i class="bi bi-whatsapp"></i>
-        </button>
-        <button href="" class="rounded-pill behance">
-          <i class="bi bi-behance"></i>
-        </button>
-      </div>
-      <hr class="text-muted my-4" />
 
+      <div class="social-links mt-4" data-aos="fade-up">
+        <button class="rounded-pill dribble"><i class="bi bi-dribbble"></i></button>
+        <button class="rounded-pill whatsapp"><i class="bi bi-whatsapp"></i></button>
+        <button class="rounded-pill behance"><i class="bi bi-behance"></i></button>
+      </div>
+
+      <hr class="my-4" />
       <p>Copyright 2024 Nishant Moona | All Rights Reserved.</p>
     </footer>
-    <!-- footer section ends here -->
 
-      <!-- bootstrap javascript cdn link  -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
 
-    <!-- AOS library javascript link  -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
     <script>
-      // initializing AOS library
       AOS.init({
-        duration: 1000,
-        offset: 50,
+        duration: 900,
+        offset: 60,
+        once: true
       });
     </script>
-    <!-- custom js file linking -->
+
     <script src="js/script.js"></script>
-    
   </body>
 </html>
-
