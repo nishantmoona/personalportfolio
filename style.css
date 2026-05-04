@@ -19,6 +19,10 @@
   --transition: 0.35s ease;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 400;
@@ -29,6 +33,7 @@ body {
     linear-gradient(135deg, var(--sand) 0%, var(--sand-2) 100%);
   color: var(--jungle);
   overflow-x: hidden;
+  margin: 0;
 }
 
 .bg-blobs {
@@ -82,7 +87,6 @@ body {
   }
 }
 
-/* Navbar */
 #navbar-top {
   background: rgba(249, 245, 232, 0.82);
   backdrop-filter: blur(12px);
@@ -148,7 +152,6 @@ body {
   box-shadow: 0 18px 30px rgba(87, 201, 194, 0.22);
 }
 
-/* Hero */
 .home-section {
   padding: 85px 0 65px;
   position: relative;
@@ -226,7 +229,6 @@ body {
   border: 6px solid rgba(255, 255, 255, 0.75);
 }
 
-/* General headings */
 .heading h2,
 .skill h2 {
   color: var(--jungle);
@@ -243,7 +245,6 @@ body {
   background: transparent;
 }
 
-/* Cards */
 .service-card,
 .portfolio-card,
 .progress-card,
@@ -312,7 +313,6 @@ body {
   transform-origin: bottom left;
 }
 
-/* Skill section */
 .skill {
   background: linear-gradient(180deg, rgba(255,255,255,0.25), rgba(255,255,255,0.06));
 }
@@ -350,17 +350,17 @@ body {
   color: var(--jungle);
 }
 
-.text {
+.label-text {
   font-size: 1.15rem;
   font-weight: 600;
   color: var(--olive-deep);
 }
 
-.skill .text {
+.section-text {
+  font-size: 1.15rem;
   color: var(--muted);
 }
 
-/* Portfolio */
 #myBtnContainer {
   margin-bottom: 45px;
 }
@@ -415,7 +415,6 @@ body {
   font-weight: 700;
 }
 
-/* Modal */
 .custom-modal {
   background: var(--white-glass-strong);
   backdrop-filter: blur(16px);
@@ -430,6 +429,7 @@ body {
   background-color: transparent;
   border: none;
   font-size: 2rem;
+  display: block;
 }
 
 .btn-c i {
@@ -445,7 +445,6 @@ body {
   font-size: 1rem;
 }
 
-/* Contact */
 .contact {
   background: transparent;
 }
@@ -489,7 +488,6 @@ body {
   border: 1px solid var(--aqua);
 }
 
-/* Footer */
 footer {
   background: linear-gradient(135deg, #334123, #26311f);
   color: rgba(255,255,255,0.82);
@@ -553,7 +551,6 @@ footer .vr {
   background-color: #255afc;
 }
 
-/* back to top */
 #btn-back-to-top {
   position: fixed;
   bottom: 34px;
@@ -565,6 +562,7 @@ footer .vr {
   border: none;
   box-shadow: 0 16px 28px rgba(79, 93, 47, 0.22);
   animation: pulse 2.8s infinite;
+  z-index: 99;
 }
 
 @keyframes pulse {
@@ -579,7 +577,6 @@ footer .vr {
   }
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .home-section {
     text-align: center;
