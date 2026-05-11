@@ -278,6 +278,15 @@ body {
   color: var(--muted);
 }
 
+.service-card-link {
+  display: block;
+  color: inherit;
+}
+
+.service-card-link:hover {
+  color: inherit;
+}
+
 .service-icon {
   max-width: 78px;
   border-radius: 18px;
